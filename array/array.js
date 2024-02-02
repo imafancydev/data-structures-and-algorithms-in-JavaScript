@@ -15,7 +15,16 @@ function List() {
     front,
     end,
     moveTo,
-    toString
+    toString,
+    isEmpty
+  }
+
+  function isEmpty() {
+    if (dataStore.length <= 0) {
+      return console.log("The array is empty")
+    } else {
+      return console.log("The array is not empty")
+    }
   }
 
   function find(value) {
