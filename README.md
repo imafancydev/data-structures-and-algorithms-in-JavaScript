@@ -1,3 +1,3 @@
-# Data Structure and Algorithm in JavaScript and TypeScript [![License][license-svg]][license-url][![Build Status](https://travis-ci.com/simple-icons/simple-icons.svg?branch=develop)](https://travis-ci.com/simple-icons/simple-icons)
+# Data Structure and Algorithm in JavaScript and TypeScript [![My Skills](https://skillicons.dev/icons?i=js,ts)](https://skillicons.dev)
 ## JavaScript
 - Array
