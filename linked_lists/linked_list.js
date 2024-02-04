@@ -1,4 +1,4 @@
-function Node() {
+function Node(element) {
   return ({
     element,
     next: null
@@ -6,6 +6,8 @@ function Node() {
 }
 
 function LinkedList() {
+  const head = Node('Head')
+
   return ({
     insert,
     find,
