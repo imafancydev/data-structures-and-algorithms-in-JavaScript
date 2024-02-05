@@ -15,8 +15,11 @@ function LinkedList() {
     toString
   });
 
-  function insert() { }
+  function insert(value, after) {
+    const newNode = Node(value);
+    const current = find(after);
+  };
   function find() { }
   function remove() { }
   function toString() { }
-}
+};
