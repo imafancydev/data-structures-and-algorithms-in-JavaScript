@@ -34,6 +34,6 @@ export function LinkedList() {
   function remove() { }
 
   function toString() {
-
+    return value;
   }
 };
