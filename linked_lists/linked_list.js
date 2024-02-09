@@ -1,11 +1,11 @@
-export function Node(element) {
+function Node(element) {
   return ({
     element,
     next: null
   });
 };
 
-export function LinkedList() {
+function LinkedList() {
   const head = Node('Head');
 
   return ({
@@ -31,9 +31,23 @@ export function LinkedList() {
     return currentNode;
   };
 
-  function remove() { }
+  function remove(value) {
+
+  }
 
   function toString() {
-    return value;
-  }
+    let currentNode = head;
+    while (currentNode.next !== null) {
+      console.log(currentNode.next.element);
+      currentNode = currentNode.next;
+    };
+  };
 };
+
+const linkedList = LinkedList();
+
+linkedList.insert('Lucas', 'Head');
+linkedList.insert('Gioavanna', 'Lucas');
+linkedList.insert('DarkMoonBlade', 'Gioavanna');
+
+linkedList.toString();
