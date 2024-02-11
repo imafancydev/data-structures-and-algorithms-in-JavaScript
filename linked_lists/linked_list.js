@@ -13,7 +13,16 @@ function LinkedList() {
     find,
     remove,
     toString,
+    findPrevious
   });
+
+  function findPrevious(value) {
+    let currentNode = head;
+    while (currentNode.next !== null && currentNode.next.element !== value) {
+      currentNode = currentNode.next;
+    };
+    return currentNode;
+  };
 
   function insert(value, after) {
     const newNode = Node(value);
@@ -32,9 +41,12 @@ function LinkedList() {
   };
 
   function remove(value) {
-    return currentNode = Node();
-    NodeList;
-  }
+    let prevNode = findPrevious(value);
+
+    if (prevNode !== null) {
+      prevNode.next = prevNode.next.next;
+    };
+  };
 
   function toString() {
     let currentNode = head;
@@ -50,5 +62,9 @@ const linkedList = LinkedList();
 linkedList.insert('Lucas', 'Head');
 linkedList.insert('Gioavanna', 'Lucas');
 linkedList.insert('DarkMoonBlade', 'Gioavanna');
+
+linkedList.toString();
+
+linkedList.remove('DarkMoonBlade');
 
 linkedList.toString();
