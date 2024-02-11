@@ -33,6 +33,7 @@ function LinkedList() {
 
   function remove(value) {
     return currentNode = Node();
+    NodeList;
   }
 
   function toString() {
