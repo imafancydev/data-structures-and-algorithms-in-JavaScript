@@ -95,17 +95,18 @@ function LinkedList() {
   };
 };
 
+//Tests
+
 const linkedList = LinkedList();
 
 linkedList.insert('Lucas', 'Head');
 linkedList.insert('Gioavanna', 'Lucas');
 linkedList.insert('DarkMoonBlade', 'Gioavanna');
-
-
-
 linkedList.remove('DarkMoonBlade');
-
 linkedList.toString();
 linkedList.push_front("Deus");
 linkedList.push_back("Anjos");
+linkedList.pop_front();
+linkedList.pop_back();
+linkedList.remove('Lucas');
 linkedList.toString();
