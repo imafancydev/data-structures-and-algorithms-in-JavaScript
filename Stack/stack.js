@@ -12,21 +12,21 @@ function Stack() {
 
   function push(value) {
     return dataStore.push(value);
-  }
+  };
 
   function pop() {
     return dataStore.pop();
-  }
+  };
 
   function toString() {
     console.log(dataStore);
-  }
+  };
 
   function clear() {
     dataStore = [];
-  }
+  };
 
-}
+};
 
 let stack = Stack();
 
