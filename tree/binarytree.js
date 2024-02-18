@@ -73,8 +73,6 @@ function BST() {
       console.log(node.show());
       inOrder(node.right);
     };
-
-
   };
 
   function preOrder(node) {
@@ -92,7 +90,6 @@ function BST() {
       console.log(node.show());
     };
   };
-
 };
 
 const nums = BST();
