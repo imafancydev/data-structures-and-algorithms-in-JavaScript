@@ -6,7 +6,6 @@ function Node(data) {
     show
   });
 
-
   function show() {
     return data;
   };
@@ -25,7 +24,6 @@ function BST() {
     inOrder,
     preOrder,
     postOrder,
-    invertBT
   });
 
   function insertNode(node, newNode) {
@@ -55,13 +53,38 @@ function BST() {
     };
   };
 
-  function remove() { };
+  function remove(value) {
+    let current = root;
 
-  function findMin() { };
 
-  function findMax() { };
+  };
 
-  function find() { };
+  function findMin() {
+    return findMinValue(root)
+  };
+
+  function findMax() {
+    return findMaxValue(root);
+  };
+
+  function find(value) {
+    let current = root;
+
+    while (current.data !== value) {
+      if (value < current.data) {
+        current = current.left;
+      } else {
+        current = current.right;
+      };
+
+      if (current === null) {
+        return null;
+      };
+
+    };
+
+    return current;
+  };
 
   function getBST() {
     return root;
@@ -90,6 +113,23 @@ function BST() {
       console.log(node.show());
     };
   };
+
+  function findMaxValue(node) {
+    if (node.right === null) {
+      return node;
+    };
+
+    return findMaxValue(node.right);
+  };
+
+  function findMinValue(node) {
+    if (node.left === null) {
+      return node;
+    };
+
+    return findMinValue(node.left)
+  };
+
 };
 
 const nums = BST();
@@ -106,8 +146,11 @@ nums.insert(10);
 nums.insert(68);
 nums.insert(90);
 
-nums.postOrder(nums.getBST());
+// nums.postOrder(nums.getBST());
 
+console.log(nums.findMin());
+console.log(nums.findMax());
+console.log(nums.find(90));
 
-
+nums.remove();
 
