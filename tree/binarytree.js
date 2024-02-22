@@ -125,7 +125,7 @@ function BST() {
       return node;
     };
 
-    return findMinValue(node.left)
+    return findMinValue(node.left);
   };
 
   // node === root
@@ -159,7 +159,7 @@ function BST() {
       return node;
     } else {
       node.right = removeNode(node.right, value);
-      return node
+      return node;
     };
   };
 
@@ -185,6 +185,6 @@ console.log(nums.findMin());
 console.log(nums.findMax());
 console.log(nums.find(90));
 
-nums.remove(17);
+nums.remove(20);
 
 console.log(nums.getBST());
