@@ -54,9 +54,7 @@ function BST() {
   };
 
   function remove(value) {
-    let current = root;
-
-
+    root = removeNode(root, value);
   };
 
   function findMin() {
@@ -130,6 +128,41 @@ function BST() {
     return findMinValue(node.left)
   };
 
+  // node === root
+
+  function removeNode(node, value) {
+    if (node === null) {
+      return null;
+    };
+
+    if (node.data === value) {
+      if (node.left === null && node.right === null) {
+        return null;
+      };
+
+      if (node.left === null) {
+        return node.right;
+      };
+
+      if (node.right === null) {
+        return node.left;
+      };
+
+      const tempNode = findMinValue(node.right);
+      node.data = tempNode.data;
+      node.right = removeNode(node.right, tempNode.data);
+
+      return node;
+    } else if (value < node.data) {
+      node.left = removeNode(node.left, value);
+
+      return node;
+    } else {
+      node.right = removeNode(node.right, value);
+      return node
+    };
+  };
+
 };
 
 const nums = BST();
@@ -152,5 +185,6 @@ console.log(nums.findMin());
 console.log(nums.findMax());
 console.log(nums.find(90));
 
-nums.remove();
+nums.remove(17);
 
+console.log(nums.getBST());
