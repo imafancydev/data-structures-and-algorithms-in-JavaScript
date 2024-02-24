@@ -9,7 +9,8 @@ function Queue() {
     front,
     end,
     clear,
-    toString
+    toString,
+    isEmpty
   });
 
   function enqueue(value) {
@@ -34,7 +35,13 @@ function Queue() {
 
   function toString() {
     console.log(dataStore);
-  }
+  };
+
+  function isEmpty(){
+    if(dataStore.length === 0){
+      return console.log('Is empty');
+    };
+  };
 
 };
 
@@ -51,3 +58,5 @@ queue.dequeue();
 queue.toString();
 
 queue.clear();
+
+queue.isEmpty();
