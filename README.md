@@ -1,13 +1,20 @@
 # Data Structure and Algorithm in JavaScript and TypeScript [![My Skills](https://skillicons.dev/icons?i=js,ts)](https://skillicons.dev)
 ## JavaScript
 - Array
-   - a constructor for creating an empty list.
-   - an operation for testing whether or not a list is empty;.
-   - an operation for prepending an entity to a list.
-   - an operation for appending an entity to a list.
-   - an operation for determining the first component (or the "head") of a list.
-   - an operation for referring to the list consisting of all the components of a list except for its first (this is called the "tail" of the list.).
-   - an operation for accessing the element at a given index.
+   - prev: Get the previous element in the array.
+   - next: Get the next element in the array.
+   - getByPosition: Get an element by its position/index in the array.
+   - getCurrent: Get the current element in the array.
+   - length: Get the length (number of elements) of the array.
+   - clear: Clear all elements from the array.
+   - insert: Insert an element into the array at a specific position.
+   - append: Append an element to the end of the array.
+   - remove: Remove an element from the array.
+   - front: Get the first element of the array.
+   - end: Get the last element of the array.
+   - moveTo: Move to a specific position/index in the array.
+   - toString: Get a string representation of the array.
+   - isEmpty: Check if the array is empty.
 
 - Linked Lists
    - push_back: Add an element to the end of the list.
