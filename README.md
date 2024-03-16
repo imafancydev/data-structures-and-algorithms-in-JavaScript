@@ -54,7 +54,7 @@
   - postOrder: Perform a post-order traversal of the tree.
 
 - HashTable
- - hash: Hash a key to generate an index for storage in the hash table.
- - set: Set a key-value pair in the hash table.
- - get: Get the value associated with a key from the hash table.
- - retrieveAll: Retrieve all key-value pairs stored in the hash table.
+  - hash: Hash a key to generate an index for storage in the hash table.
+  - set: Set a key-value pair in the hash table.
+  - get: Get the value associated with a key from the hash table.
+  - retrieveAll: Retrieve all key-value pairs stored in the hash table.
